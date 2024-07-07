@@ -42,11 +42,17 @@
        }
        section#login > div.foto{
         flex: 1;
-        
+        order: 2;
         height: 80vh;
        }
        section#login > div.login{
         flex: 1;
+        order: 1;
         margin: auto;
        }
+       div.login > h1 {
+       font-size: 2.5rem;
+        }
+        div.login > p {
+            font-size: 1.5rem;
 }

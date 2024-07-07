@@ -57,5 +57,13 @@ div.foto {
 }
 div.login {
   display: block;
-  padding: 10px;
+  
+}
+div.login > h1 {
+text-align: center;
+padding-bottom: 10px;
+}
+div.login > p {
+    text-align: justify;
+    padding: 0 10px 10px;
 }
