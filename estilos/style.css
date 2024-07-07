@@ -35,8 +35,8 @@ main {
 section#login {
   display: block;
   background-color: var(--cor3);
-  width: 250px;
-  height: 500px;
+  width: 300px;
+  height: 600px;
   border-radius: 20px;
   position: absolute;
   overflow: hidden;
@@ -44,10 +44,12 @@ section#login {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 5px var(--cor5);
+  transition: width 0.2s, heght 0.2s;
+  transition-timing-function: ease;
 }
 div.foto {
   display: block;
-  height: 250px;
+  height: 350px;
   background: url(../imagens/pexels-polizelj-5668906.jpg)
     no-repeat;
   background-size: 100% 90%;

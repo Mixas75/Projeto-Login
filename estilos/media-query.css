@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+:root {
+    --cor1: #0B1C26;
+    --cor2: #79b4d9;
+    --cor3: #71bbd9;
+    --cor4: #c9e7f2;
+    --cor5: #0da643;
+  }
+
+/** Versão Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    }
+   section#login{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+   }
+   section#login > div.foto{
+    flex: 1;
+    
+    height: 80vh;
+   }
+   section#login > div.login{
+    flex: 1;
+    margin: auto;
+   }
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+    }
+    section#login{
+        width: 950px;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+       }
+       section#login > div.foto{
+        flex: 1;
+        
+        height: 80vh;
+       }
+       section#login > div.login{
+        flex: 1;
+        margin: auto;
+       }
+}
