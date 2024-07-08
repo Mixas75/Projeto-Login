@@ -8,7 +8,7 @@
 #0DA643 #AAB7BF
 */
 :root {
-  --cor1: #0B1C26;
+  --cor1: #0b1c26;
   --cor2: #79b4d9;
   --cor3: #71bbd9;
   --cor4: #c9e7f2;
@@ -42,28 +42,103 @@ section#login {
   overflow: hidden;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   box-shadow: 0px 0px 5px var(--cor5);
+  transform: translate(-50%, -50%);
   transition: width 0.2s, heght 0.2s;
   transition-timing-function: ease;
 }
 div.foto {
   display: block;
   height: 350px;
-  background: url(../imagens/pexels-polizelj-5668906.jpg)
-    no-repeat;
+  background: url(../imagens/pexels-polizelj-5668906.jpg) no-repeat;
   background-size: 100% 90%;
   object-fit: cover;
 }
 div.login {
   display: block;
-  
 }
 div.login > h1 {
-text-align: center;
-padding-bottom: 10px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 div.login > p {
-    text-align: justify;
-    padding: 0 10px 10px;
+  text-align: justify;
+  padding: 0 10px 10px;
+}
+.campo1,
+.campo2 {
+  display: flex;
+  width: 100%;
+}
+form > div.campo1 > input[type="email"] {
+  font-size: 1rem;
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+form > div.campo2 > input[type="password"] {
+  font-size: 1rem;
+  width: 80%;
+  border-radius: 5px;
+  margin: 10px 0 0 5px;
+}
+div.campo1 > label > span {
+  padding-top: 2px;
+}
+div.campo2 > label > span {
+  padding-top: 10px;
+}
+.entrar {
+  display: flex;
+  width: 100%;
+}
+
+form {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+form > div.entrar {
+  margin-top: 10px;
+}
+form > div.entrar > input[type="submit"] {
+  font-size: 1rem;
+  width: 80%;
+  background-color: var(--cor4);
+  border-radius: 5px;
+  border: solid 1px var(--cor5);
+  color: var(--cor1);
+  margin: 0 5px;
+}
+form > div.entrar > input[type="submit"]:hover {
+  background-color: var(--cor1);
+  color: var(--cor4);
+}
+.esqueci {
+  display: flex;
+  margin-top: 6px;
+  height: 25px;
+}
+form > div.esqueci > a.esqueci {
+  display: block;
+  font-size: 1rem;
+  width: 80%;
+  border-radius: 5px;
+  border: solid 1px var(--cor5);
+  background-color: var(--cor4);
+  color: var(--cor1);
+  margin-left: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+form > div.esqueci > a.esqueci:hover {
+  background-color: var(--cor1);
+  color: var(--cor4);
+}
+div.esqueci > span {
+  padding-top: 7px;
+}
+span {
+  color: var(--cor1);
 }

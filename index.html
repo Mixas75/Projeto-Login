@@ -21,28 +21,28 @@
             Seja bem-vinda(o) novamente! Faça seu login para acessar o sistema.
           </p>
           <form action="login.php" method="post" autocomplete="on">
-            <div class="campo">
+            <div class="campo1">
               <label for="iuser"
                 ><span class="material-symbols-outlined"> person </span></label
               >
               <input
                 id="iuser"
-                type="text"
+                type="email"
                 name="usuario"
-                placeholder="Digite seu e-mail"
+                placeholder=" Digite seu e-mail"
                 required
                 autocomplete="email"
               />
             </div>
-            <div class="campo">
-              <label for="isenha"><span class="material-symbols-outlined">
-                vpn_key
-                </span></label>
+            <div class="campo2">
+              <label for="isenha"
+                ><span class="material-symbols-outlined"> vpn_key </span></label
+              >
               <input
                 id="isenha"
                 type="password"
                 name="senha"
-                placeholder="8 caracteres"
+                placeholder=" 8 caracteres"
                 required
                 autocomplete="current-password"
                 size="20"
@@ -51,14 +51,13 @@
               />
             </div>
             <div class="entrar">
-                <span class="material-symbols-outlined">
-                    login
-                    </span>
-                <input type="submit" value="Entrar" />
+              <span class="material-symbols-outlined"> login </span>
+              <input type="submit" value="Entrar" />
             </div>
-            <a href="esqueci.html"><span class="material-symbols-outlined">
-                mail
-                </span>Esqueci a senha</a>
+            <div class="esqueci">
+              <span class="material-symbols-outlined"> mail </span>
+              <a href="esqueci.html" class="esqueci">Esqueci a senha</a>
+            </div>
           </form>
         </div>
       </section>
